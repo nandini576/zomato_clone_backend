@@ -11,7 +11,7 @@ const productRoutes=require('./routes/productRoutes')
 const path=require('path')
 
 //middlware used for sending HTTP request
-const PORT=3000
+const PORT=process.env.PORT || 3000
 const app=express()//assigning express functions to a variable
 app.use(express.json())
 app.use(bodyParser.json())//converts user data into json
